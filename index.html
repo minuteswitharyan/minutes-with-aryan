@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minutes With Aryan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🔥 Navbar -->
+  <nav>
+    <h2>Minutes With Aryan</h2>
+    <ul>
+      <li>Home</li>
+      <li>Blogs</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- 🌙 Toggle Mode -->
+  <button onclick="toggleMode()">🌙 Toggle Mode</button>
+
+  <!-- 🎯 Hero Section -->
+  <div class="container">
+    <h1>Welcome to My Blog</h1>
+
+    <img src="images/aryan.jpg" alt="Aryan">
+
+    <p id="text">
+      In a world that moves fast, this is a space where thoughts breathe and ideas grow.
+    </p>
+
+    <!-- Hidden Text -->
+    <p id="moreText" style="display:none;">
+      This blog shares real experiences, motivation and life lessons to help you grow daily.
+    </p>
+
+    <button onclick="readMore()">Read More</button>
+
+    <!-- ❤️ Like Button -->
+    <button onclick="likePost()">❤️ Like (<span id="likeCount">0</span>)</button>
+  </div>
+
+  <!-- 📝 Blog Section -->
+  <div class="blog-section">
+    <h2>Latest Thoughts</h2>
+
+    <div class="card">
+      <h3>Start Small</h3>
+      <p>Success doesn't come overnight, it starts with one small step.</p>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <div class="card">
+        
+      <h3>Stay Consistent</h3>
+      <p>Consistency beats motivation every single time.</p>
+    </div>
+    <h2>My YouTube Videos</h2>
+
+<div class="video-container">
+
+  <iframe 
+    src="https://www.youtube.com/embed/Ntp4i8dqq10"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <iframe 
+    src="https://www.youtube.com/embed/5sNvWOtzwdQ"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <iframe 
+    src="https://www.youtube.com/embed/yp8ubNef364"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <iframe 
+    src="https://www.youtube.com/embed/OMN4hl0zqqk"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+</div>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RCKPvGXEn98?si=ATrtc39DWUMxekU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <!-- 📞 Footer -->
+  <footer>
+    <p>© 2026 Minutes With Aryan</p>
+  </footer>
+
+  <!-- ⚙️ JavaScript -->
+  <script>
+
+    // 🌙 Dark Mode
+    function toggleMode() {
+      document.body.classList.toggle("light-mode");
+    }
+
+    // 🔥 Read More
+    function readMore() {
+      let more = document.getElementById("moreText");
+
+      if (more.style.display === "none") {
+        more.style.display = "block";
+      } else {
+        more.style.display = "none";
+      }
+    }
+
+    // ❤️ Like Button
+    let count = 0;
+    function likePost() {
+      count++;
+      document.getElementById("likeCount").innerText = count;
+    }
+
+  </script>
+
+</body>
+</html>
